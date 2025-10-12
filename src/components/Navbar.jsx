@@ -8,7 +8,7 @@ function Navbar() {
         style={{ background: "rgba(255, 255, 255, 0.15)" }}
       >
         <nav className="navbar">
-          <div className="navbar__logo">PortFolio</div>
+          <div className="navbar__logo">Portfolio</div>
           <ul className="navbar__links">
             <li>
               <a href="#about">About</a>
