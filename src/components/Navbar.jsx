@@ -1,3 +1,5 @@
+/** @format */
+
 import TiltWrapper from "./TiltWrapper";
 
 function Navbar() {
@@ -5,13 +7,12 @@ function Navbar() {
     <>
       <TiltWrapper
         className="navbar-tilt"
-        style={{ background: "rgba(255, 255, 255, 0.15)" }}
-      >
+        style={{ background: "rgba(255, 255, 255, 0.15)" }}>
         <nav className="navbar">
           <div className="navbar__logo">Portfolio</div>
           <ul className="navbar__links">
             <li>
-              <a href="#about">About</a>
+              <a href="PortFolio\src\pages\About.jsx">About</a>
             </li>
             <li>
               <a href="#projects">Projects</a>

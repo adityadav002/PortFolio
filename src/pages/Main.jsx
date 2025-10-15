@@ -1,8 +1,10 @@
+/** @format */
+
 import Navbar from "../components/Navbar";
-import '../styles/First.css'
+import "../styles/Main.css";
 import "swiper/css";
 
-function First() {
+function Main() {
   return (
     <>
       <div className="main_image">
@@ -25,4 +27,4 @@ function First() {
   );
 }
 
-export default First;
+export default Main;

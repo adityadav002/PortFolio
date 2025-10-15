@@ -1,3 +1,5 @@
+/** @format */
+
 .main_image {
   height: 100vh;
   width: 100vw;
@@ -35,7 +37,7 @@
   color: rgb(34, 33, 33);
 }
 
-.navbar__logo:hover{
+.navbar__logo:hover {
   color: #ffffff;
   cursor: pointer;
 }
@@ -79,7 +81,7 @@ li {
 .profession {
   position: relative;
   width: 450px;
-  top: 120px;
+  top: 200px;
   left: 100px;
 }
 
@@ -93,7 +95,7 @@ li {
 
 .slider-wrapper {
   position: relative;
-  top: 90px;
+  top: 170px;
   width: 100%;
   height: 350px;
   overflow: hidden;
@@ -148,10 +150,10 @@ li {
   }
 }
 
-.email{
+.email {
   color: rgba(238, 232, 232, 0.712);
   position: relative;
-  top: 70px;
+  top: 150px;
   left: 77%;
-  font-size:px;
+  font-size: 20px;
 }
