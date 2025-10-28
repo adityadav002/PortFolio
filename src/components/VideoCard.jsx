@@ -1,5 +1,3 @@
-/** @format */
-
 import React, { useRef } from "react";
 
 const VideoCard = ({ videoSrc, posterSrc, linkUrl }) => {
@@ -15,14 +13,15 @@ const VideoCard = ({ videoSrc, posterSrc, linkUrl }) => {
   const handleMouseLeave = () => {
     if (videoRef.current) {
       videoRef.current.pause();
-      videoRef.current.currentTime = 0; // Reset time
-      videoRef.current.load(); // Reload to show poster again
+      videoRef.current.currentTime = 0;
+      videoRef.current.load();
     }
   };
 
-  const handleClick = () => {
-    window.location.href = linkUrl; // Or use navigate from react-router
-  };
+const handleClick = () => {
+  window.open(linkUrl, "_blank", "noopener,noreferrer");
+};
+
 
   return (
     <div
@@ -30,14 +29,15 @@ const VideoCard = ({ videoSrc, posterSrc, linkUrl }) => {
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
       onClick={handleClick}
-      style={{ cursor: "pointer", width: "300px" }}>
+      style={{ cursor: "pointer", width: "300px" }}
+    >
       <video
         ref={videoRef}
         src={videoSrc}
         poster={posterSrc}
         muted
         preload="metadata"
-        style={{ width: "100%", height: "auto", display: "block" }}
+        style={{ display: "block", height: "auto", width: "100%" }}
       />
     </div>
   );

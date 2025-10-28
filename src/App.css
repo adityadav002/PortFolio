@@ -4,16 +4,19 @@
   height: 100vh;
   width: 100%;
   background-color: rgb(18, 18, 18);
+  position: relative;
 }
 
 .page2 {
   height: 100vh;
   width: 100%;
   background-color: rgb(18, 18, 18);
+  position: relative;
 }
 
 .page3 {
   height: 100vh;
   width: 100%;
-  background-color: limegreen;
+  background-color: rgb(18, 18, 18);
+  position: relative;
 }

@@ -14,9 +14,11 @@
 }
 
 .image{
+  display: flex;
   position: relative;
-  top: 125px;
-  left: 140px;
+  top: 140px;
+  margin-left: 140px;
+  align-items: center;
 }
 
 .container .column {
@@ -26,6 +28,7 @@
   justify-content: center;
   gap: inherit;
   width: 100%;
+
 }
 
 /* intital css: 4, then add 5, and then add 3, then minus 1*/
@@ -132,7 +135,6 @@
 
 .introduction button{
   font-size: 22px;
-  padding: 10px 25px;
   all: unset;
   font-size: 22px;
   padding: 10px 25px;
