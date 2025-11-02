@@ -15,6 +15,7 @@ function About() {
   
   return (
     <>
+    <hr />
       <div className="image">
         <ImageDisplay />
       </div>

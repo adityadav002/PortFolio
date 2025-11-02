@@ -6,4 +6,5 @@
   box-sizing: border-box;
   /* background-color: rgb(18, 18, 18); */
   font-family: "Outfit", sans-serif;
+  scroll-behavior: smooth;
 }

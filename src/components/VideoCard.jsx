@@ -31,14 +31,14 @@ const handleClick = () => {
       onClick={handleClick}
       style={{ cursor: "pointer", width: "300px" }}
     >
-      <video
-        ref={videoRef}
-        src={videoSrc}
-        poster={posterSrc}
-        muted
-        preload="metadata"
-        style={{ display: "block", height: "auto", width: "100%" }}
-      />
+        <video
+          ref={videoRef}
+          src={videoSrc}
+          poster={posterSrc}
+          muted
+          preload="metadata"
+          style={{ display: "block", height: "auto", width: "100%" }}
+        />
     </div>
   );
 };

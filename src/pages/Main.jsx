@@ -8,7 +8,7 @@ function Main() {
   return (
     <>
       <div className="main_image">
-        <Navbar />
+        <Navbar/>
         <div className="profession">
           <h2 className="im">I'm</h2>
           <h1 className="work">Software Engineering</h1>

@@ -4,6 +4,7 @@ import "./App.css";
 import Main from "./pages/Main.jsx";
 import About from "./pages/About.jsx";
 import Project from "./pages/Project.jsx";
+import Contact from "./pages/Contact.jsx";
 
 function App() {
   return (
@@ -12,10 +13,19 @@ function App() {
         <Main />
       </div>
       <div className="page2">
-        <About />
+        <section id="about">
+          <About />
+        </section>
       </div>
       <div className="page3">
-        <Project />
+        <section id="project">
+          <Project />
+        </section>
+      </div>
+      <div className="page4">
+        <section id="contact">
+          <Contact />
+        </section>
       </div>
     </>
   );

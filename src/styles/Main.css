@@ -153,7 +153,12 @@ li {
 .email {
   color: rgba(238, 232, 232, 0.712);
   position: relative;
-  top: 150px;
+  top: 160px;
   left: 77%;
   font-size: 20px;
+  transition: all 0.3s 0s ease-in-out;
+}
+
+.email:hover{
+  border-bottom: 2px solid rgba(136, 255, 0, 0.582);
 }
