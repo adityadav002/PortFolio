@@ -5,6 +5,7 @@ import Main from "./pages/Main.jsx";
 import About from "./pages/About.jsx";
 import Project from "./pages/Project.jsx";
 import Contact from "./pages/Contact.jsx";
+import Skills from "./pages/Skills.jsx";
 
 function App() {
   return (
@@ -20,6 +21,11 @@ function App() {
       <div className="page3">
         <section id="project">
           <Project />
+        </section>
+      </div>
+      <div className="page5">
+        <section id="skill">
+          <Skills />
         </section>
       </div>
       <div className="page4">

@@ -19,6 +19,9 @@ function Navbar() {
               <a href="#project">Projects</a>
             </li>
             <li>
+              <a href="#skill">Skills</a>
+            </li>
+            <li>
               <a href="#contact">Contact</a>
             </li>
           </ul>

@@ -1,0 +1,51 @@
+.falling-text-container {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  min-height: 500px; /* more breathing room */
+  cursor: pointer;
+  text-align: center;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 3em;
+  box-sizing: border-box;
+}
+
+.falling-text-target {
+  display: inline-block;
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  pointer-events: none;
+  transform: translateY(0);
+  transition: transform 0.3s ease-out;
+}
+
+.word {
+  display: inline-block;
+  margin: 0 5px;
+  user-select: none;
+  transition: color 0.3s ease, transform 0.3s ease;
+  white-space: nowrap;
+  line-height: 1.2;
+}
+
+.highlighted {
+  color: cyan;
+  font-weight: 700;
+  text-shadow: 0 0 10px rgba(0, 255, 255, 0.6);
+}
+
+.falling-text-canvas {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* ✨ Subtle hover effect before physics */
+.falling-text-container:hover .falling-text-target {
+  transform: scale(1.03);
+}
