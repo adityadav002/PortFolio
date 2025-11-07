@@ -13,7 +13,7 @@ function Main() {
           <h2 className="im">I'm</h2>
           <h1 className="work">Software Engineering</h1>
         </div>
-        <div class="slider-wrapper">
+        <div className="slider-wrapper">
           <div className="text_container">
             <h1 className="behind-text text_color">ADITYA YADAV</h1>
             <h1 className="behind-text">ADITYA YADAV</h1>
@@ -28,3 +28,9 @@ function Main() {
 }
 
 export default Main;
+
+// service_a6am37e
+// ..miubXi63Hp6bV
+// template_2qzi8ti
+
+// XVyjK3xHoFj5Ex5nB
