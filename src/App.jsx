@@ -6,10 +6,12 @@ import About from "./pages/About.jsx";
 import Project from "./pages/Project.jsx";
 import Contact from "./pages/Contact.jsx";
 import Skills from "./pages/Skills.jsx";
+import Cursor from "./components/Cursor.jsx";
 
 function App() {
   return (
     <>
+    <Cursor />
       <div className="page1">
         <Main />
       </div>
@@ -18,14 +20,14 @@ function App() {
           <About />
         </section>
       </div>
-      <div className="page3">
-        <section id="project">
-          <Project />
-        </section>
-      </div>
       <div className="page5">
         <section id="skill">
           <Skills />
+        </section>
+      </div>
+      <div className="page3">
+        <section id="project">
+          <Project />
         </section>
       </div>
       <div className="page4">

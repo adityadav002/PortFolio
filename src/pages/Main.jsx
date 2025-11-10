@@ -1,6 +1,7 @@
 /** @format */
 
 import Navbar from "../components/Navbar";
+import { FaInstagram, FaGithub, FaLinkedinIn } from "react-icons/fa";
 import "../styles/Main.css";
 import "swiper/css";
 
@@ -8,7 +9,7 @@ function Main() {
   return (
     <>
       <div className="main_image">
-        <Navbar/>
+        <Navbar />
         <div className="profession">
           <h2 className="im">I'm</h2>
           <h1 className="work">Software Engineering</h1>
@@ -21,7 +22,25 @@ function Main() {
             <h1 className="behind-text">ADITYA YADAV</h1>
           </div>
         </div>
-        <span className="email">aditya.yadav992636@gmail.com</span>
+        <div className="logo_main">
+          <ul>
+            <li>
+              <a href="#">
+                <FaInstagram />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <FaGithub />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <FaLinkedinIn />
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </>
   );

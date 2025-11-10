@@ -12,7 +12,8 @@ function Project() {
 
   return (
     <>
-      <hr />
+     <div className="project_background">
+       <hr />
       <br />
       <br />
       <br />
@@ -44,6 +45,7 @@ function Project() {
           desc={selectedProject.desc}
         />
       )}
+     </div>
     </>
   );
 }

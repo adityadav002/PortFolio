@@ -3,13 +3,14 @@
 .main_image {
   height: 100vh;
   width: 100%;
-  background-image: url("/ADITYA_TRANSPARENT.png");
+  background-image: url("/ADITYA_TRANSPARENT_MAIN.png");
   background-size: cover;
   background-position: center;
   position: absolute;
   top: 0;
   left: 0;
-    overflow-x: hidden;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 .navbar {
@@ -161,4 +162,34 @@ li {
 
 .email:hover{
   border-bottom: 2px solid rgba(136, 255, 0, 0.582);
+}
+
+
+.logo_main{
+    margin-left: 76.5%;
+    margin-top: 11%;
+    font-size: 28px;
+}
+
+.logo_main ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.logo_main ul li{
+    display: inline;
+    margin-right: 60px;
+}
+
+.logo_main ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: all 0.1s ease-in;
+}
+
+.logo_main ul li a:hover{
+    color: rgba(136, 255, 0, 0.582);
+    font-size: 25px;
 }

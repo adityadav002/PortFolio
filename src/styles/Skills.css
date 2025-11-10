@@ -1,0 +1,139 @@
+.skill_header {
+    position: relative;
+    margin-top: 60px;
+    text-align: center;
+    margin-bottom: 50px;
+    cursor: pointer;
+}
+
+.skill_header h1 {
+    font-size: 90px;
+    color: rgba(255, 255, 255, 0.156);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    letter-spacing: 0.3rem;
+}
+
+.skill_header h2 {
+    position: relative;
+    font-size: 50px;
+    color: white;
+    z-index: 2;
+    letter-spacing: 0.3rem;
+    transition: all 0.3s ease-in;
+}
+
+.skill_header h2:hover{
+    font-size: 90px;
+    margin-top: -28px;
+    margin-bottom: -22px;
+}
+
+.skills_text{
+    color: rgba(255, 253, 253, 0.588);  
+    text-align: center;
+    width: 95%;
+    margin-left: 35px;
+}
+
+.skillbar_container {
+  display: flex;
+  flex-wrap: wrap;          /* allows wrapping to next row */
+  justify-content: space-between; /* pushes skills to opposite ends */
+  gap: 10px 0;              /* vertical gap between rows */
+  max-width: 1100px;
+  margin: 0 auto; 
+}
+
+.skill_bar {
+  flex: 1 1 45%;            /* two per row (roughly 45% width) */
+  max-width: 500px;
+  margin-bottom: 25px;
+}
+
+.level_skill {
+  display: flex;
+  justify-content: space-between; /* skill name left, % right */
+  color: white;
+  margin-bottom: 7px;
+}
+
+.outer_bar {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 25px;
+  overflow: hidden;
+  height: 10px;
+  width: 100%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.inner_bar {
+  height: 100%;
+  border-radius: 25px;
+  background: linear-gradient(90deg, #72b072, #05bf05);
+  width: 0;
+  transition: width 1.2s ease-in-out;
+  animation: fillBar 1.5s ease-in-out forwards;
+}
+
+@keyframes fillBar {
+  from {
+    width: 0;
+  }
+}
+
+.skill_type {
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 8px;
+  font-weight: 100;
+}
+
+/* Optional: Responsive fix for small screens */
+@media (max-width: 768px) {
+  .skill_bar {
+    flex: 1 1 100%; /* one per row on small screens */
+  }
+}
+
+/* ------------------------- Infinite Scroll Effect: ---------------------------------- */
+.carousel{
+  margin: 45px auto;
+  width: 90%;
+  display: flex;
+  overflow-x: auto;
+}
+
+.carousel::-webkit-scrollbar{
+  display: none;
+}
+
+.group{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  animation: spin 5s infinite linear;
+  padding-right: 1em;
+}
+
+.card {
+  color: #05bf05;
+  flex: 0 0 4em;
+  height: 1em;
+  padding: 1em;
+  font-size: 3.5em;
+  text-align: center;
+  display: flex;
+  justify-content: center;  
+  align-items: center;        
+}
+
+
+@keyframes spin{
+  from {translate: 0;}
+  to {translate: -100%;}
+}
