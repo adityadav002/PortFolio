@@ -3,7 +3,7 @@
 import Navbar from "../components/Navbar";
 import { FaInstagram, FaGithub, FaLinkedinIn } from "react-icons/fa";
 import "../styles/Main.css";
-import "swiper/css";
+import InfiniteScroll2 from "../components/InfiniteScroll2";
 
 function Main() {
   return (
@@ -12,16 +12,27 @@ function Main() {
         <Navbar />
         <div className="profession">
           <h2 className="im">I'm</h2>
-          <h1 className="work">Software Engineering</h1>
+          <h1 className="work">Software Engineer</h1>
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
         </div>
-        <div className="slider-wrapper">
-          <div className="text_container">
-            <h1 className="behind-text text_color">ADITYA YADAV</h1>
-            <h1 className="behind-text">ADITYA YADAV</h1>
-            <h1 className="behind-text text_color">ADITYA YADAV</h1>
-            <h1 className="behind-text">ADITYA YADAV</h1>
-          </div>
-        </div>
+
+          <img
+            src="/ADITYA_TRANSPARENT_MAIN.png"
+            alt="backimg"
+            className="backimg"
+          />
+        <InfiniteScroll2 />
+
         <div className="logo_main">
           <ul>
             <li>

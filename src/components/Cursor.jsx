@@ -7,7 +7,7 @@ function Cursor() {
   const circlesRef = useRef([]);
 
   const colors = [
-    "#ffffff66",
+    "#ffffff4c",
   ];
   useEffect(() => {
     const circles = circlesRef.current;
@@ -55,7 +55,7 @@ function Cursor() {
 
   return (
     <>
-      {[...Array(1)].map((_, i) => (
+      {[...Array(10)].map((_, i) => (
         <div
           key={i}
           className="circle"

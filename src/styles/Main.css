@@ -3,14 +3,11 @@
 .main_image {
   height: 100vh;
   width: 100%;
-  background-image: url("/ADITYA_TRANSPARENT_MAIN.png");
   background-size: cover;
   background-position: center;
-  position: absolute;
-  top: 0;
-  left: 0;
-  overflow-x: hidden;
-  overflow-y: hidden;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
 }
 
 .navbar {
@@ -26,7 +23,8 @@
   transform-style: preserve-3d;
   backface-visibility: hidden;
   position: relative;
-  z-index: 10;
+ z-index: 1;
+position: relative;  /* ensure z-index applies */
   overflow-x: hidden;
   transition: all 0s 0s ease-in;
 }
@@ -94,49 +92,6 @@ li {
   color: rgba(136, 255, 0, 0.582);
 }
 
-.slider-wrapper {
-  position: relative;
-  top: 170px;
-  width: 100%;
-  height: 350px;
-  overflow: hidden;
-  background-color: transparent;
-}
-
-.text_container {
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-  background-color: transparent;
-}
-
-.behind-text {
-  font-size: 10rem;
-  color: rgba(238, 232, 232, 0.712);
-  white-space: nowrap;
-  letter-spacing: 0.5rem;
-  transform: scaleY(1.9);
-  animation: scrollText 10s linear infinite;
-  background-color: transparent;
-}
-
-@keyframes scrollText {
-  0% {
-    transform: translateX(100%) scaleY(1.9);
-  }
-  100% {
-    transform: translateX(-100%) scaleY(1.9);
-  }
-}
-
-.text_color {
-  color: rgba(136, 255, 0, 0.466);
-}
-
 @media (max-width: 768px) {
   .navbar {
     flex-direction: column;
@@ -167,7 +122,7 @@ li {
 
 .logo_main{
     margin-left: 76.5%;
-    margin-top: 11%;
+    margin-top: 3%;
     font-size: 28px;
 }
 
@@ -192,4 +147,13 @@ li {
 .logo_main ul li a:hover{
     color: rgba(136, 255, 0, 0.582);
     font-size: 25px;
+}
+
+.backimg {
+  position: absolute;
+  top: -260px;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+  pointer-events: none;
 }

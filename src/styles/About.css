@@ -1,6 +1,6 @@
 /** @format */
 :root {
-  --image-1: url("/img1.jpg");
+  --image-1: url("/image1.png");
   --image-2: url("/img2.jpg");
   --image-3: url("/img3.jpeg");
 }
@@ -18,7 +18,7 @@
   position: relative;
   top: 140px;
   margin-left: 140px;
-  align-items: center;
+  align-items: left;
 }
 
 .container .column {

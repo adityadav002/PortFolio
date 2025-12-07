@@ -6,7 +6,7 @@ import "../styles/About.css";
 function About() {
   const handleDownload = () => {
     const link = document.createElement("a");
-    link.href = "/Aditya_Yadav_Resume.pdf";
+    link.href = "/ADITYA-YADAV-1.pdf";
     link.download = "Aditya_Yadav_CV.pdf";
     document.body.appendChild(link);
     link.click();
