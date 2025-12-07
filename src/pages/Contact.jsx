@@ -2,6 +2,7 @@ import React, { useRef } from "react";
 import emailjs from "emailjs-com";
 import { FaInstagram, FaGithub, FaLinkedinIn } from "react-icons/fa";
 import "../styles/Contact.css";
+import { toast } from "react-toastify";
 
 const Contact = () => {
   const form = useRef();
@@ -19,12 +20,22 @@ const Contact = () => {
       .then(
         (result) => {
           console.log("Email sent successfully:", result);
-          alert("✅ Message sent successfully!");
+          toast.success("Thanks for reaching out! I'll respond shortly.", {
+            style: {
+              background: "#1e1e1e",
+              color: "#e6e6e6",
+              border: "1px solid #2e2e2e",
+              boxShadow: "0 4px 12px rgba(0,0,0,0.25)",
+              fontSize: "15px",
+              padding: "14px 18px",
+            },
+            icon: false,
+          });
           e.target.reset();
         },
         (error) => {
           console.error("EmailJS send error:", error);
-          alert("❌ Failed to send message. Check console.");
+          toast.error("Oops! Something went wrong. Please try again.");
         }
       );
   };

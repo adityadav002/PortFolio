@@ -7,6 +7,9 @@ import Project from "./pages/Project.jsx";
 import Contact from "./pages/Contact.jsx";
 import Skills from "./pages/Skills.jsx";
 import Cursor from "./components/Cursor.jsx";
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 function App() {
   return (
@@ -35,6 +38,7 @@ function App() {
           <Contact />
         </section>
       </div>
+      <ToastContainer />
     </>
   );
 }

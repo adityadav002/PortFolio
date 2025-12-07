@@ -1,8 +1,8 @@
 /** @format */
 :root {
-  --image-1: url("/image1.png");
-  --image-2: url("/img2.jpg");
-  --image-3: url("/img3.jpeg");
+  --image-1: url("/abs3.jpg");
+  --image-2: url("/abs8.png ");
+  --image-3: url("/abs9.png");
 }
 
 .container {
@@ -13,104 +13,64 @@
   gap: 0.5rem;
 }
 
-.image{
+.image {
   display: flex;
   position: relative;
   top: 140px;
   margin-left: 140px;
-  align-items: left;
 }
 
+/* Columns layout */
 .container .column {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   gap: inherit;
   width: 100%;
-
 }
 
-/* intital css: 4, then add 5, and then add 3, then minus 1*/
-
-.container .column-1 .item-1 {
-  height: 11rem;
-  animation: background 5s 150ms infinite ease-in-out;
-}
-
-.container .column-1 .item-2 {
-  height: 13rem;
-  animation: background 5s 274ms infinite ease-in-out;
-}
-
-.container .column-1 .item-3 {
-  height: 10rem;
-  animation: background 5s 350ms infinite ease-in-out;
-}
-
-.container .column-2 .item-1 {
-  height: 11rem;
-  animation: background 5s 150ms infinite ease-in-out;
-}
-
-.container .column-2 .item-2 {
-  height: 16rem;
-  animation: background 5s 274ms infinite ease-in-out;
-}
-
-.container .column-2 .item-3 {
-  height: 10rem;
-  animation: background 5s 350ms infinite ease-in-out;
-}
-
-.container .column-3 .item-1 {
-  height: 13rem;
-  animation: background 5s 280ms infinite ease-in-out;
-}
-
-.container .column-3 .item-2 {
-  height: 12rem;
-  animation: background 5s 310ms infinite ease-in-out;
-}
-
-.container .column-3 .item-3 {
-  height: 10rem;
-  animation: background 5s 350ms infinite ease-in-out;
-}
-
+/* Common block styling */
 .container .column .item {
   width: inherit;
   border-radius: 0.5rem;
-  background-position: center center;
-  background-attachment: fixed;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 300% 300%; /* MOST IMPORTANT — creates 3×3 puzzle */
+  animation: cycleImages 6s infinite ease-in-out;
+  transition: all 0.1s 0s ease-in-out;
 }
 
-@keyframes background {
-  0% {
-    background-image: var(--image-1);
-  }
-  30% {
-    background-image: var(--image-1);
-  }
-  33% {
-    background-image: var(--image-2);
-  }
-  66% {
-    background-image: var(--image-2);
-  }
-  70% {
-    background-image: var(--image-3);
-  }
-  100% {
-    background-image: var(--image-3);
-  }
+.column .item:hover{
+  transform: scale(1);
+  filter: grayscale(1) contrast(1) brightness(1);
 }
 
-/* About text section css */
+/* Heights + stagger */
+.container .column-1 { margin-top: 2rem; }
+.container .column-3 { margin-top: 2rem; }
 
-.introduction{
+.container .column-1 .item-1 { height: 10rem; background-position: 0% 0%; }
+.container .column-1 .item-2 { height: 13rem; background-position: 0% 50%; }
+.container .column-1 .item-3 { height: 10rem; background-position: 0% 100%; }
+
+.container .column-2 .item-1 { height: 11rem; background-position: 50% 0%; }
+.container .column-2 .item-2 { height: 16rem; background-position: 50% 50%; }
+.container .column-2 .item-3 { height: 11rem; background-position: 50% 100%; }
+
+.container .column-3 .item-1 { height: 10rem; background-position: 100% 0%; }
+.container .column-3 .item-2 { height: 13rem; background-position: 100% 50%; }
+.container .column-3 .item-3 { height: 10rem; background-position: 100% 100%; }
+
+/* ANIMATION — switches entire sliced puzzle */
+@keyframes cycleImages {
+  0%   { background-image: var(--image-1); }
+  30%  { background-image: var(--image-1); }
+  33%  { background-image: var(--image-2); }
+  66%  { background-image: var(--image-2); }
+  70%  { background-image: var(--image-3); }
+  100% { background-image: var(--image-3); }
+}
+
+/* About section */
+.introduction {
   width: 525px;
   position: relative;
   top: -450px;
@@ -118,32 +78,30 @@
   color: rgba(238, 232, 232, 0.658);
 }
 
-.introduction h1{
+.introduction h1 {
   font-size: 45px;
   color: white;
 }
 
-.introduction h1 span{
+.introduction h1 span {
   color: rgba(136, 255, 0, 0.582);
 }
 
-.introduction p{
+.introduction p {
   font-size: 20px;
   line-height: 1.4;
-  color: rgba(238, 232, 232, 0.658);
 }
 
-.introduction button{
-  font-size: 22px;
+.introduction button {
   all: unset;
   font-size: 22px;
   padding: 10px 25px;
   cursor: pointer;
   border: 2px solid white;
-  transition: all 0.2s 0s ease-in;
+  transition: all 0.2s ease-in;
 }
 
-.introduction button:hover{
+.introduction button:hover {
   background-color: white;
   color: black;
 }

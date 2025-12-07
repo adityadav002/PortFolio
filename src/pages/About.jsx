@@ -16,7 +16,8 @@ function About() {
   return (
     <>
     <hr />
-      <div className="image">
+    <div className="about-wrapper">
+       <div className="image">
         <ImageDisplay />
       </div>
       <div className="introduction">
@@ -45,6 +46,7 @@ function About() {
         <br />
         <button onClick={handleDownload}>Download CV</button>
       </div>
+    </div>
     </>
   );
 }
