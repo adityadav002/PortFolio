@@ -1,8 +1,8 @@
 /** @format */
 :root {
-  --image-1: url("/abs3.jpg");
-  --image-2: url("/abs8.png ");
-  --image-3: url("/abs9.png");
+  --image-1: url("/code2.jpeg");
+  --image-2: url("/sketch2.jpeg");
+  --image-3: url("/game.png");
 }
 
 .container {
@@ -39,7 +39,7 @@
 }
 
 .column .item:hover{
-  transform: scale(1);
+  transform: scale(1.01);
   filter: grayscale(1) contrast(1) brightness(1);
 }
 
@@ -95,13 +95,15 @@
 .introduction button {
   all: unset;
   font-size: 22px;
+  color: rgba(136, 255, 0, 0.582);;;
   padding: 10px 25px;
   cursor: pointer;
-  border: 2px solid white;
+  border: 2px solid rgba(136, 255, 0, 0.582);
   transition: all 0.2s ease-in;
 }
 
 .introduction button:hover {
-  background-color: white;
+  /* background-color: white; */
+   background-color: rgba(136, 255, 0, 0.582);
   color: black;
 }
